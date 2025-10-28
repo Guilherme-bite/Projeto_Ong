@@ -1,8 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-h1{
-    color: blue;
-    background-color: burlywood;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: blueviolet;
+    height: 100vh;
+    background: url("/img/photo_home.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar .logo{
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.navbar .logo span{
+    color: #2dc228;
+}
+.navbar .menulink{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar a:hover{
+    color: #2dc228;
+}
+.section-one{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.section-one .content{
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-one .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.section-one .content p{
+    font-weight: 600;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.section-one .content button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    display: block;          
+    margin-left: auto;       
+    margin-right: auto;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.section-one .content button:hover{
+    color: #fff;
+    background: #2dc228;
+}
+#menu-btn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#close-menu-btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px){
+
+    header{
+        padding: 10px 20px;
+    }
+
+    header.mobile-menu::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+    #close-menu-btn, #menu-btn{
+        display: block;
+    }
+    .navbar .menulink{
+        position: fixed;
+        left: -260px;
+        top: 0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        padding: 70px 40px 0;
+        transition: left 0.15s ease;
+    }
+    header.mobile-menu .navbar .menulink{
+        left: 0;
+    }
+    .navbar a{
+        color: #000;
+    }
+    .section-one .content{
+        text-align: center;
+    }
+    .section-one .content :is(h1, p){
+        max-width: 100%;
+    }
+    .section-one .content h1{
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+    .section-one .content button{
+        padding: 9px 18px;
+    }
 }
