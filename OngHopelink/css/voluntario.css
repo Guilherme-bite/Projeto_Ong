@@ -8,6 +8,9 @@
 }
 body{
     background-color: #b65555;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* ===== HEADER ===== */
@@ -65,6 +68,69 @@ header .navbar {
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background: #121b25;
+  list-style: none;
+}
+.footer-container{
+  padding: 80px 13% 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3,5rem;
+  background: #1a242f;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.footer-container h4{
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+.footer-container li{
+  margin-bottom: 16px;
+}
+.footer-container li a{
+  display: block;
+  color: #d6d6d6;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+  text-decoration: none;
+}
+.footer-container li a:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+}
+.footer-container p{
+  color: #d6d6d6;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.icons a{
+  display: inline-block;
+  font-size: 22px;
+  color: #d6d6d6;
+  margin-right: 17px;
+  transition: all .40s ease;
+}
+.icons a:hover{
+  color: #fff;
+  transform: translateY(-5px);
+}
+.footer-container .logo{
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.footer-container span{
+  color: #2dc228;
 }
 @media screen and (max-width: 900px) {
     header {

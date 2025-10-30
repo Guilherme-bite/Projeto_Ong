@@ -10,3 +10,12 @@ menuBtn.addEventListener("click", () => {
 closeMenuBtn.addEventListener("click", () => {
    menuBtn.click();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const botao = document.getElementById('doe');
+  if (botao) {
+    botao.addEventListener('click', function() {
+      window.location.href = 'cadastro.html';
+    });
+  }
+});
