@@ -6,3 +6,163 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #287a25;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  height: 100%;
+}
+
+/* CONTÊINER DOS INPUTS EM DUAS COLUNAS */
+#input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas */
+  gap: 20px; /* espaçamento entre colunas e linhas */
+}
+
+.form-label {
+  font-size: 12px;
+  color: #272727;
+  font-weight: 500;
+}
+
+.input-container {
+  display: grid;
+  gap: 8px;
+}
+
+.input-text {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-text i {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  color: #272727;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.control-form {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+.control-form:focus {
+  outline: none;
+}
+
+.input-box .input-text:focus-within {
+  outline: 2px solid #2dc228;
+}
+
+.radio-container {
+  grid-column: span 2; /* ocupa as duas colunas */
+}
+
+#gender-inputs{
+  display: flex;
+  gap: 20px;
+}
+
+.radio-box{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.control-form[type="radio"]{
+  accent-color: #2dc228;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-register {
+  font-weight: 500;
+  color: #272727;
+  position: relative;
+}
+
+.form-register::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #287a25;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  gap: 8px;
+  height: fit-content;
+  background-color: #287a25;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.btn-default:hover {
+  background-color: #2dc228;
+}
+
+/* CAMPOS QUE DEVEM PEGAR A LINHA TODA */
+#password,
+#confirm-password,
+.radio-container {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 500px){
+  #form-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+  }
+  #input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+}

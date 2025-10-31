@@ -223,13 +223,13 @@ footer {
 }
 
 /* ===== MENU RESPONSIVO ===== */
-#menu-btn {
+.menu-btn {
   color: #fff;
   cursor: pointer;
   display: none;
 }
 
-#close-menu-btn {
+.close-menu-btn {
   display: none;
   position: absolute;
   right: 20px;

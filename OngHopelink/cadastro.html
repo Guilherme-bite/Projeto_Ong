@@ -12,7 +12,7 @@
     <main class="form-container">
     <div class="form-header">
         <h1 class="form-register">Criar Conta</h1>
-        <button class="btn-register">
+        <button class="btn-default" id="btn-default">
             <i class='bx bx-log-in'></i>
         </button>
     </div>
@@ -48,6 +48,7 @@
         <label for="cpf" class="form-label">CPF</label>
         <div class="input-text">
             <input type="text" name="cpf" id="cpf" class="control-form" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" title="Formato: 000.000.000-00" required>
+            <i class='bx bx-user-pin'></i>
         </div>
         </div>
 
@@ -55,6 +56,7 @@
         <label for="telefone" class="form-label">Telefone</label>
         <div class="input-text">
             <input type="tel" name="telefone" id="telefone" class="control-form" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Formato: (00) 00000-0000" required>
+            <i class='bx bx-phone'></i>
         </div>
         </div>
 
@@ -62,6 +64,38 @@
         <label for="nascimento" class="form-label">Nascimento</label>
         <div class="input-text">
             <input type="date" name="nascimento" id="nascimento" class="control-form" required>
+        </div>
+        </div>
+
+        <div class="input-box">
+        <label for="cep" class="form-label">CEP</label>
+        <div class="input-text">
+            <input type="text" name="cep" id="cep" class="control-form" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" title="Formato: 00000-000">
+            <i class='bx bx-map-pin'></i>
+        </div>
+        </div>
+
+        <div class="input-box">
+        <label for="endereco" class="form-label">Endereço</label>
+        <div class="input-text">
+            <input type="text" name="endereco" id="endereco" class="control-form" placeholder="Rua, número...">
+            <i class='bx bx-map-pin'></i>
+        </div>
+        </div>
+
+        <div class="input-box">
+        <label for="bairro" class="form-label">Bairro</label>
+        <div class="input-text">
+            <input type="text" name="bairro" id="bairro" class="control-form" placeholder="Digite seu bairro">
+            <i class='bx bx-map-pin'></i>
+        </div>
+        </div>
+
+        <div class="input-box">
+        <label for="cidade" class="form-label">Cidade</label>
+        <div class="input-text">
+            <input type="text" name="cidade" id="cidade" class="control-form" placeholder="Digite sua cidade">
+            <i class='bx bx-map-pin'></i>
         </div>
         </div>
 
@@ -80,8 +114,26 @@
             <i class='bx bx-low-vision'></i>
         </div>
         </div>
+
+        <div class="radio-container">
+            <label for="#" class="form-label">
+                Genero
+            </label>
+            <div id="gender-inputs">
+                <div class="radio-box">
+                    <input type="radio" name="gender" id="female"class="control-form" value="female">
+                    <label for="female" class="form-label">Feminino</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="gender" id="male"class="control-form" value="male">
+                    <label for="male" class="form-label">Masculino</label>
+                </div>
+            </div>
+        </div>
     </div>
+    <button type="submit" class="btn-default">Criar conta</button>
     </form>
     </main>
+    <script src="/js/buscacep.js"></script>
 </body>
 </html>
