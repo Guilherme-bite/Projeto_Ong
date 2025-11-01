@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>HopeLink</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/login.css"/>
+  <title>HopeLink</title>
 </head>
 <body>
-    <h1>transparente</h1>
+  <main class="form-container" id="form-container">
+    <div class="form-header">
+      <h1 id="login-title" class="form-register">Entrar</h1>
+       <div class="logo">
+        <a href="#" class="logo">HopeLink<span>.</span></a>
+      </div>
+    </div>
+
+    <form action="#" method="#" id="login-form">
+      <div class="input-box">
+        <label for="username" class="form-label">Nome de usuário</label>
+        <div class="input-text">
+          <input id="username" name="username" type="text" class="control-form" placeholder="Nome de usuário" required/>
+          <i class="bx bxs-user"></i>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="password" class="form-label">Senha</label>
+        <div class="input-text">
+          <input id="password" name="password" type="password" class="control-form" placeholder="Senha" required/>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+      </div>
+
+      <div class="input-container form-row">
+        <label class="form-label">
+          <input type="checkbox" name="remember"/>Lembrar-me
+        </label>
+        <a href="/recuperar-senha" class="link-forgot">Esqueceu a senha?</a>
+      </div>
+      <button type="submit" class="btn-default">Login</button>
+      <div class="link-register">
+        <p>Ainda não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
