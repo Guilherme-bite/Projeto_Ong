@@ -7,7 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #b65555;
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
@@ -68,6 +67,28 @@ header .navbar {
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+.sobre-hero {
+  text-align: center;
+  padding: 150px 20px 70px;
+  background: linear-gradient(rgba(45, 194, 40, 0.7), rgba(45, 194, 40, 0.7));
+}
+
+.historia,
+.equipe,
+.selo {
+  width: 80%;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.historia p,
+.equipe p,
+.selo p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
 }
 
 footer {

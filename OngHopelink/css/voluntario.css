@@ -7,7 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #b65555;
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
@@ -68,6 +67,47 @@ header .navbar {
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+.voluntario-hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+  background: linear-gradient(rgba(45, 194, 40, 0.7), rgba(45, 194, 40, 0.7));
+}
+
+.voluntario-hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.porque-voluntario,.tipos-voluntariado, .como-participar {
+  width: 80%;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.vol-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.vol-card {
+  flex-basis: 31%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.btn-voluntario {
+  display: inline-block;
+  margin-top: 20px;
+  background: #2dc228;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 footer {
