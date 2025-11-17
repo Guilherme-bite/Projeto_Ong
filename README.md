@@ -45,13 +45,21 @@ A hospedagem é feita via **Vercel**, que oferece HTTPS automático e deploy con
 ## 📁 Estrutura de Pastas
 
 /OngHopelink
+
 │── css/
+
 │ └── voluntario.css
+
 │── js/
+
 │ └── buscacep.js
+
 │── img/
+
 │ └── imagens do projeto
+
 │── index.html
+
 └── README.md
 
 ---
