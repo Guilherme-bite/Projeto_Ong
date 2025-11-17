@@ -11,7 +11,6 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-
 /* ===== HEADER ===== */
 header {
   position: fixed;
@@ -72,12 +71,19 @@ header .navbar {
 .voluntario-hero {
   text-align: center;
   padding: 120px 20px 60px;
-  background: linear-gradient(rgba(45, 194, 40, 0.7), rgba(45, 194, 40, 0.7));
+  background: #121b25;
 }
 
 .voluntario-hero h1 {
   font-size: 36px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.voluntario-hero p{
+  margin: 10px 0 40px;
   font-weight: 600;
+  color: #fff;
 }
 
 .porque-voluntario,.tipos-voluntariado, .como-participar {
@@ -87,27 +93,45 @@ header .navbar {
 }
 
 .vol-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .vol-card {
   flex-basis: 31%;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.vol-card:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 }
 
 .btn-voluntario {
-  display: inline-block;
-  margin-top: 20px;
-  background: #2dc228;
+  background: #287a25;
   color: #fff;
-  padding: 12px 26px;
-  border-radius: 8px;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 38px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 34px;
+  cursor: pointer;
   text-decoration: none;
+}
+
+.btn-voluntario:hover{
+  border: 1px solid #2dc228;
+  background: #2dc228;
+  transition: 1s ease;
 }
 
 footer {

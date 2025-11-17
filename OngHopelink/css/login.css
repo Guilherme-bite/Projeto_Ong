@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #287a25;
+  background-color: #121b25;
 }
 
 .form-container{
@@ -42,7 +42,7 @@ body {
   width: 65px;
   height: 3px;
   border-radius: 30px;
-  background-color: #287a25;
+  background-color: #121b25;
   left: 0;
   bottom: 0;
 }
@@ -133,12 +133,12 @@ form {
   cursor: pointer;
   gap: 8px;
   height: fit-content;
-  background-color: #287a25;
+  background-color: #121b25;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s ease;
 }
 .btn-default:hover {
-  background-color: #2dc228;
+  background: #2dc228;
+  transition: 1s ease;
 }
 
 .link-register{ 
